@@ -1,5 +1,6 @@
 .navbar-main {
     font-family: Roboto;
+   
     height: 10vh;
     width: 100vw;
     display: flex;
@@ -11,11 +12,15 @@
     margin-left: 50px;
     text-decoration: none;
     color: white;
+    font-weight: 100;
+    letter-spacing: .5px;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 .navbar-list {
     margin-right: 50px;
-    width: 30vw;
+    width: 35vw;
     max-width: 400px;
     height: 10vh;
     display: flex;
@@ -24,7 +29,26 @@
     list-style: none;
 }
 
+
+
 .navbar-item {
     text-decoration: none;
     color: white;
+    letter-spacing: 0.5px;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+.navbar-item:hover {
+    font-size: 1.1rem;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+.hide-title {
+    font-size: 0.1rem;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+
 }

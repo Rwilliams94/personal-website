@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Components/NavBar";
@@ -12,12 +12,35 @@ import Lost from './Pages/Lost';
 import './App.css';
 
 function App() {
+   
+  const [show, setShow] = useState(false)
+
+  function handleShowFalse() {
+    setShow(false)
+  }
+
+  function handleShowTrue() {
+    setShow(true)
+  }
+
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar show={show} funcShow={handleShowTrue} funcHide={handleShowFalse}/>
+ 
 
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route
+          exact
+          path="/"
+          render={(historyProps) => {
+            return (
+              <Home
+                {...historyProps}
+                funcShow={handleShowTrue}
+              />
+            );
+          }}
+        />
         <Route exact path="/about" component={About}/>
         <Route exact path="/projects" component={Projects}/>
         <Route exact path="/contact" component={Contact}/>

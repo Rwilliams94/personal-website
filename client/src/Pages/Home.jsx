@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 import '../Styles/Home.css'
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div className="home-main">
             <div className='home-title-main'>
@@ -10,7 +10,7 @@ const Home = () => {
                 <h1 className='home-title'>I'm a full-stack web developer</h1>
                 <div className='home-projectlink'>
                     <NavLink exact to="/projects" className="navbar-item">
-                        <h3>See My Projects</h3>
+                        <h3 onClick={props.funcShow}>See My Projects</h3>
                     </NavLink>
                 </div>
             </div>

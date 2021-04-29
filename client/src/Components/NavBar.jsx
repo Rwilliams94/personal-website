@@ -5,26 +5,34 @@ import "../Styles/Navbar.css";
 
 const NavBar = (props) => {
 
+  const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    setShow(props.show)
+  }, [props.show])
+
+
 
   return (
     <div className="navbar-main">
-      <NavLink exact to="/" className="navbar-title">
-        <h2>Rowan Williams.</h2>
+      <NavLink className={`navbar-title ${show ? "" : "hide-title"}`} exact to="/">
+        <h2 className="thin" onClick={props.funcHide}>Rowan Williams.</h2>
       </NavLink>
+     
       <ul className="navbar-list">
         <li className="navbar-item">
           <NavLink exact to="/about" className="navbar-item">
-            <h3>About</h3>
+            <h3 className="thin" onClick={props.funcShow} >About</h3>
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink exact to="/projects" className="navbar-item">
-            <h3>Projects</h3>
+            <h3 className="thin" onClick={props.funcShow} >Projects</h3>
           </NavLink>
         </li>
         <li className="navbar-item">
           <NavLink exact to="/contact" className="navbar-item">
-            <h3>Contact</h3>
+            <h3 className="thin" onClick={props.funcShow} >Contact</h3>
           </NavLink>
         </li>
       </ul>

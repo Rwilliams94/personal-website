@@ -8,6 +8,10 @@
   background: black;
 }
 
+.thin {
+  font-weight: 400;
+}
+
 .lost-main {
   height: 90vh;
   width: 100%;

@@ -10,7 +10,6 @@
 
 .projects-links {
     width: 75vw;
-    max-width: 1050px;
     height: 80%;
     display: flex;
     justify-content: flex-start;
@@ -60,10 +59,11 @@
     position: absolute;
     z-index: 2;
     top: 1vh;
-    height: 80vh;
     width: 750px;
     overflow: scroll;
     background: rgb(236, 236, 236);
+    border: black solid 2px;
+    box-shadow: black;
     color: black;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
+    margin: 0 30px 2vh 0;
 }
 
 .close {

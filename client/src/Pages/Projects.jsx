@@ -6,6 +6,7 @@ const Projects = () => {
   const [popUpCanned, setPopUpCanned] = useState(false);
   const [popUpSpaceman, setPopUpSpaceman] = useState(false);
   const [popUpRecipe, setPopUpRecipe] = useState(false);
+  const [popUpPoke, setPopUpPoke] = useState(false);
   const [popUp, setPopUp] = useState(false);
 
   function handlesetPopUpCanned() {
@@ -20,6 +21,11 @@ const Projects = () => {
 
   function handlesetPopUpRecipe() {
     setPopUpRecipe(!popUpRecipe);
+    setPopUp(!popUp);
+  }
+
+  function handlesetPopUpPoke() {
+    setPopUpPoke(!popUpPoke);
     setPopUp(!popUp);
   }
 
@@ -103,15 +109,16 @@ const Projects = () => {
             <h1 className="popup-title">Recipe Hunter</h1>
             <h2 className="popup-subtitle">Recipe finder with "what's in your fridge?" and dietary requirement search tools</h2>
             <p className="popup-description">
-              Spaceman's space craft has been overrun by enemy aliens and
-              they've destroyed the ship... Help Spaceman collect
-              as much energy as possible so he can shoot off into the stars to
-              safety. In SPRINT mode you have 3 MINUTES to get off the ship.
-              collect as much energy as you can in the time limit but WATCH OUT FOR THOSE EVIL
-              ALIENS! In MARATHON mode you have all
-              the time you can handle but Spaceman is not invincible... The Aliens are angry and 
-              once you've collected each lot of energy they're only going to get angrier... And faster... YOU ONLY
-              HAVE 3 LIVES SO BE CAREFUL AND GOOD LUCK!
+              Recipe finder web app created using NodeJs, ExpressJs, Handlebars, MongoDB and Axios. The app
+              allows any users to search through recipes with an interactive search bar and look through a recipes
+              page with filters. 
+              Signed up users can add friends with their dietary requirements to their profile. If that friend is 
+              coming to dinner, simply click their name and the recipes will 
+              filter accordingly to their needs. More excitingly, signed in users can use the "what's in your fridge?" 
+              tool, which allows them to input ingredients they have in their fridge and see what recipes they 
+              can cook up using them.
+              Made using the Spoontacular API.             
+              
             </p>
             <div className="popup-close-box">
               <a
@@ -126,9 +133,45 @@ const Projects = () => {
             </div>
           </div>
         </div>
+          
+
+        <div className={`projects-popup ${popUpPoke ? "" : "hide"}`}>
+            <img
+                className="popup-image"
+                src="https://res.cloudinary.com/dahzswwzk/image/upload/v1619704735/Pokemon_n9qs0g.png"
+                alt="recipe"
+            />
+            <div className="popup-description-box">
+                <h1 className="popup-title">PokemonAPI Test</h1>
+                <h2 className="popup-subtitle">Quick React project</h2>
+                <p className="popup-description">
+                A three day challenge set to myself to create a full-stack app using the Pokemon API.
+                Consisting of a list and details card, with a settings page to switch between light 
+                and dark theme and to change list length. The project was aimed to practice and demonstrate 
+                the use of Context, Hooks, Pagintaion, complex API handling and React. Back end is built 
+                using NodeJS, ExpressJS and MongoDB.
+                </p>
+                <div className="popup-close-box">
+                <a
+                    className="popup-link"
+                    href=" https://pokeapp-test.herokuapp.com/"
+                >
+                    Go to the site
+                </a>
+                <p onClick={handlesetPopUpPoke}>
+                    <h1 className="close">X</h1>
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+
+         
+        
       </div>
       <div className="projects-links">
-        <Grid container spacing={4} justify="flex-start">
+        <Grid container spacing={4} justify="center">
           <Grid item>
             <div className="projects-link-box">
               <img
@@ -159,9 +202,16 @@ const Projects = () => {
               />
             </div>
           </Grid>
-          {/* <Grid item>
-                        <div className='contact-link-box'><a className='contact-link' href="https://www.linkedin.com/in/rowan-mt-williams/"></a><TwitterIcon style={{fontSize: 80}}/></div>
-                    </Grid> */}
+          <Grid item>
+            <div className="projects-link-box">
+              <img
+                onClick={handlesetPopUpPoke}
+                className="projects-link-box"
+                src="https://res.cloudinary.com/dahzswwzk/image/upload/v1619705110/poke_vkcsib.png"
+                alt="pokeapi"
+              />
+            </div>
+          </Grid>
         </Grid>
       </div>
     </div>
