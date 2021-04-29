@@ -1,0 +1,28 @@
+.about-main {
+    height: 90vh;
+    font-family: Roboto;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-body {
+    width: 70vw;
+    height: 70vh;
+    
+}
+
+.about-body > p {
+    margin: 3vh 0;
+    line-height: 25px;
+}
+
+.about-title {
+    color: rgb(77, 102, 128) ;
+}
+
+.about-technologies {
+    color: rgb(77, 102, 128) ;
+    font-size: 1.2rem;
+}

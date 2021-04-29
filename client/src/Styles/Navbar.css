@@ -1,0 +1,30 @@
+.navbar-main {
+    font-family: Roboto;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-list {
+    margin-right: 50px;
+    width: 30vw;
+    max-width: 400px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: white;
+}

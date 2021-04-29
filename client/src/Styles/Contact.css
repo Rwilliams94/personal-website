@@ -1,0 +1,56 @@
+.contact-main {
+    height: 90vh;
+    font-family: Roboto;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links {
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-link-box {
+    width: 100px;
+    height: 100px;
+    border: rgb(77, 102, 128) 2px solid;
+    color: rgb(77, 102, 128) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    
+
+}
+
+.contact-link-box:hover {
+    width: 110px;
+    height: 110px;
+    border: rgb(32, 118, 211) 2px solid;
+    color: rgb(32, 118, 211);
+    -webkit-transition: .3s;
+    transition: .3s;
+    
+}
+
+
+.contact-link {
+    text-decoration: none;
+    color: rgb(77, 102, 128) ;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.contact-link:hover {
+    color: rgb(32, 118, 211);
+    -webkit-transition: .3s;
+    transition: .3s;
+}

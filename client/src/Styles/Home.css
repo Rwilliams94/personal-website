@@ -1,0 +1,46 @@
+.home-main {
+    height: 90vh;
+    font-family: Roboto;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title-main {
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    margin: 0;
+
+}
+
+.name {
+    color: rgb(77, 102, 128)
+}
+
+.home-projectlink {
+    width: 200px;
+    margin-top: 5vh;
+    text-align: center;
+    border: rgb(77, 102, 128) solid 2px;
+    color: rgb(77, 102, 128);
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+.home-projectlink:hover {
+    width: 210px;
+    border: rgb(32, 118, 211) 2px solid;
+    color: rgb(32, 118, 211);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
