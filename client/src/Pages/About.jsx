@@ -4,6 +4,9 @@ import "../Styles/About.css";
 const About = () => {
   return (
     <div className="about-main" id="About">
+      <div className="about-pic-box" >
+        <img className="about-pic" src="https://res.cloudinary.com/dahzswwzk/image/upload/v1620212898/profile_picture_rz2q1z.jpg" alt="profile"/>
+      </div>
       <div className="about-body">
         <h1 className="about-title">Tech. Finance. London. Paris.</h1>
         <p>

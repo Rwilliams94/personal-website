@@ -1,6 +1,22 @@
 .navbar-main {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
+    top: 0;
+    font-family: Roboto;
+    height: 7vh;
+    width: 100vw;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.navbar-inner {
+    position: fixed;
+    z-index: 1;
     top: 0;
     font-family: Roboto;
     height: 7vh;
@@ -8,12 +24,11 @@
     max-width: 1300px;
     background: white;
     color: black;
-    border-bottom: black 2px double;
     display: flex;
     align-items: center;
     justify-content: space-between;
     -webkit-transition: .3s;
-    transition: .3s;
+    transition: .3s;   
 }
 
 

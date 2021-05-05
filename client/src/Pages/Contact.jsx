@@ -9,12 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const Contact = () => {
     return (
         <div className='contact-main' id="Contact">
-            <div className="contact-title-box">
-                <h1 className="contact-title">
-                    I would love the opportunity to work with you.        
-                </h1>
-                <h1 className="contact-title">If you're hiring, please get in touch.</h1>
-            </div>
+            <h1 className="contact-title thin"> Contact Me</h1>
             <div className='contact-links'>
                 <Grid container spacing={4} justify='center'>
                     <Grid item>

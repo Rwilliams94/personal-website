@@ -1,10 +1,9 @@
 .contact-main {
-    height: 43vh;
+    height: 30vh;
     width: 100%;
     font-family: Roboto;
-    color: rgb(238, 237, 237);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -29,19 +28,16 @@
 }
 
 .contact-title {
-    /* font-family: Roboto; */
     font-size: 1.9rem;
-    margin: 1vh 0;
-    font-weight: 400;
-    /* color: rgb(0, 198, 255)  */
+    margin-bottom: 4vh;
 
 }
 
 .contact-link-box {
     width: 100px;
     height: 100px;
-    border: rgb(0, 198, 255) 2px solid;
-    color: rgb(0, 198, 255) ;
+    border: #4d6680  2px solid;
+    color: #4d6680  ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +61,7 @@
 
 .contact-link {
     text-decoration: none;
-    color: rgb(0, 198, 255) ;
+    color: #4d6680  ;
     -webkit-transition: .3s;
     transition: .3s;
 }

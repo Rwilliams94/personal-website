@@ -67,14 +67,14 @@ const NavBar = (props) => {
         </li>
       </ul>
       </div> */}
-      
+      <div className="navbar-inner">  
 
       <Link 
         activeClass="active"
         to="Home"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={0}
         duration={1000}
         className="navbar-item"
          >
@@ -87,7 +87,7 @@ const NavBar = (props) => {
         to="About"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={0}
         duration={1000}
         className="navbar-item" >
           <h2 className={`thin navbar-scroll ${show ? "" : "hide-title"}`} >About</h2>
@@ -97,7 +97,7 @@ const NavBar = (props) => {
         to="Projects"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={0}
         duration={1000}
         className="navbar-item" >
           <h2 className={`thin navbar-scroll ${show ? "" : "hide-title"}`}>Projects</h2>
@@ -107,12 +107,13 @@ const NavBar = (props) => {
         to="Contact"
         spy={true}
         smooth={true}
-        offset={-100}
+        offset={0}
         duration={1000} 
         className="navbar-item"
         >
           <h2 className={`thin navbar-scroll ${show ? "" : "hide-title"}`}>Contact</h2>
       </Link>
+      </div>
       </div>
 
 

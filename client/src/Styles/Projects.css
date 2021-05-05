@@ -1,14 +1,21 @@
 .projects-main {
-    height: 93vh;
+    height: 100vh;
     width: 100vw;
+    padding-top: 10vh;
     position: relative;
     font-family: Roboto;
     background: whitesmoke;
     color:gray;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+}
+
+.project-title {
+    color: black;
+    margin-bottom: 5vh;
+    font-size: 2.0rem;
 }
 
 .projects-links {
@@ -52,9 +59,9 @@
     overflow: scroll;
     z-index: 2;
     top: 7vh;
-    height: 90vh;
+    height: 93vh;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(207, 205, 205, 0.6);
     overflow-x: hidden;
 }
 
