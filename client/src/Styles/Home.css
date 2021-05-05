@@ -1,11 +1,12 @@
 .home-main {
-    height: 90vh;
+    height: 100vh;
     font-family: Roboto;
-    color: whitesmoke;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .home-title-main {
     width: 75vw;
@@ -22,25 +23,41 @@
 
 }
 
-.name {
-    color: rgb(77, 102, 128)
-}
 
 .home-projectlink {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     margin-top: 5vh;
+    font-size: 1.2rem;
     text-align: center;
-    border: rgb(77, 102, 128) solid 2px;
-    color: rgb(77, 102, 128);
+    border: #4d6680 solid 2px;
+    color: #4d6680;
     -webkit-transition: .3s;
-    transition: .3s;
+    transition: ease-in .3s;
 
 }
 
 .home-projectlink:hover {
+    height: 70px;
     width: 210px;
     border: rgb(32, 118, 211) 2px solid;
     color: rgb(32, 118, 211);
+    font-size: 1.4rem;
     -webkit-transition: .3s;
-    transition: .3s;
+    transition: ease-in .3s;
 }
+
+/* .navbar-scroll {
+    -webkit-transition: .3s;
+    transition: ease-in .3s;
+}
+
+.navbar-scroll:hover {
+    color: rgb(32, 118, 211);
+    font-size: 1.3rem;
+    -webkit-transition: .3s;
+    transition: ease-in .3s;
+} */

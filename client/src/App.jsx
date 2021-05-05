@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
+import { Link } from 'react-scroll'
 import "./App.css";
 import NavBar from "./Components/NavBar";
 import Home from "./Pages/Home";
@@ -26,9 +27,12 @@ function App() {
   return (
     <div className="App">
       <NavBar show={show} funcShow={handleShowTrue} funcHide={handleShowFalse}/>
- 
+      <Home  funcShow={handleShowTrue}/>
+      <About />
+      <Projects />
+      <Contact />
 
-      <Switch>
+      {/* <Switch>
         <Route
           exact
           path="/"
@@ -45,7 +49,7 @@ function App() {
         <Route exact path="/projects" component={Projects}/>
         <Route exact path="/contact" component={Contact}/>
         <Route path="*" component={Lost}/>
-      </Switch>
+      </Switch> */}
     </div>
   );
 }

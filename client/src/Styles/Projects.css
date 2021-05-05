@@ -1,15 +1,19 @@
 .projects-main {
-    height: 90vh;
+    height: 93vh;
+    width: 100vw;
     position: relative;
     font-family: Roboto;
-    color: whitesmoke;
+    background: whitesmoke;
+    color:gray;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .projects-links {
     width: 75vw;
+    max-width: 900px;
     height: 80%;
     display: flex;
     justify-content: flex-start;
@@ -21,8 +25,6 @@
 .projects-link-box {
     width: 300px;
     height: 300px;
-    border: rgb(77, 102, 128) 2px solid;
-    color: rgb(77, 102, 128) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,34 +37,50 @@
 }
 
 .projects-link-box:hover {
-    width: 350px;
-    height: 350px;
-    border: rgb(32, 118, 211) 4px solid;
-    color: rgb(32, 118, 211);
+    width: 320px;
+    height: 320px;
     -webkit-transition: .3s;
     transition: .3s;
     
 }
 
 .projects-popup-container {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    height: 100%;
+    overflow: scroll;
+    z-index: 2;
+    top: 7vh;
+    height: 90vh;
     width: 100vw;
-    background: rgba(77, 102, 128, 0.4);
+    background: rgba(255, 255, 255, 0.3);
+    overflow-x: hidden;
+}
+
+
+
+.projects-popup-container::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .projects-popup-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+.projects-popup-container::-webkit-scrollbar-thumb {
+  background-color: rgb(77, 102, 128);
+  outline: 1px solid navy;
 }
 
 .projects-popup {
     position: absolute;
-    z-index: 2;
-    top: 1vh;
-    width: 750px;
+    z-index: 3;
+    top: 5vh;
+    width: 85vw;
+    max-width: 750px;
     overflow: scroll;
-    background: rgb(236, 236, 236);
-    border: black solid 2px;
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: black;
     color: black;
     display: flex;
@@ -71,8 +89,8 @@
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 
@@ -80,16 +98,18 @@
     height: 0vh;
     width: 0px;
     visibility: hidden;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .popup-image {
-    width: 750px;
+    width: 85vw;
+    max-width: 750px;
 }
 
 .popup-description-box {
-    width: 700px;
+    width: 80vw;
+    max-width: 700px;
     margin-top: 2vh;
 }
 
@@ -116,14 +136,45 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px 2vh 0;
+    margin: 0 0 2vh 0;
 }
 
 .close {
     font-size: 1.2rem;
     color: rgb(77, 102, 128);
-    font-weight: 200;
+    font-weight: 300;
     cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.close:hover {
+    font-size: 1.4rem;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+}
+
+.close-box {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+}
+
+.close-box:hover {
+    height: 33px;
+    width: 33px;
+    background: rgb(216, 215, 215);
+    border: rgb(77, 102, 128) solid 2px;
+    color: rgb(77, 102, 128);
+    -webkit-transition: .2s;
+    transition: .2s;
 
 }
 

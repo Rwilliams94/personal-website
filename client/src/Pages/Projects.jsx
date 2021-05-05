@@ -32,7 +32,8 @@ const Projects = () => {
   console.log(popUp);
 
   return (
-    <div className="projects-main">
+    <div className="projects-main" id="Projects">
+      <h1 className="color-pop">Projects</h1>
       <div className={`projects-popup-container ${popUp ? "" : "hide"}`}>
         <div className={`projects-popup ${popUpCanned ? "" : "hide"}`}>
           <img
@@ -58,7 +59,7 @@ const Projects = () => {
               >
                 Go to the app
               </a>
-              <p onClick={handlesetPopUpCanned}>
+              <p className="close-box" onClick={handlesetPopUpCanned}>
                 <h1 className="close">X</h1>
               </p>
             </div>
@@ -92,7 +93,7 @@ const Projects = () => {
               >
                 Go to the game
               </a>
-              <p onClick={handlesetPopUpSpaceman}>
+              <p className="close-box" onClick={handlesetPopUpSpaceman}>
                 <h1 className="close">X</h1>
               </p>
             </div>
@@ -127,7 +128,7 @@ const Projects = () => {
               >
                 Go to the site
               </a>
-              <p onClick={handlesetPopUpRecipe}>
+              <p className="close-box" onClick={handlesetPopUpRecipe}>
                 <h1 className="close">X</h1>
               </p>
             </div>
@@ -158,7 +159,7 @@ const Projects = () => {
                 >
                     Go to the site
                 </a>
-                <p onClick={handlesetPopUpPoke}>
+                <p className="close-box" onClick={handlesetPopUpPoke}>
                     <h1 className="close">X</h1>
                 </p>
                 </div>

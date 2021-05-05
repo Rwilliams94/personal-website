@@ -1,21 +1,43 @@
 .navbar-main {
+    position: fixed;
+    z-index: 2;
+    top: 0;
     font-family: Roboto;
-   
-    height: 10vh;
+    height: 7vh;
     width: 100vw;
+    max-width: 1300px;
+    background: white;
+    color: black;
+    border-bottom: black 2px double;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
+
 .navbar-title {
+    font-size: 1.25rem;
     margin-left: 50px;
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 100;
     letter-spacing: .5px;
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+
+.navbar-lines {
+    position: absolute;
+    right: 100px;
+    display: none;
+    width: 50px;
+    color: whitesmoke;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .navbar-list {
@@ -27,28 +49,80 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
+.navbar-menu {
+    position: absolute;
+    z-index: 1;
+    right: 60px;
+    top: 90px;
+    width: 130px;
+    height: 250px;
+    background: rgba(77, 102, 128, 0.6);
+}
+
+.navbar-menu-list {
+    margin-right: 50px;
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    width: 50px;
+ 
+}
+
+@media only screen and (max-width: 875px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-lines {
+        display: flex;
+    }
+    
+}
+
+.navbar-menu-item {
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+}
+
+.navbar-menu-item:hover {
+    font-size: 0.9rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
 
 
 .navbar-item {
+    font-size: 0.8rem;
     text-decoration: none;
-    color: white;
     letter-spacing: 0.5px;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
 }
 
-.navbar-item:hover {
-    font-size: 1.1rem;
-    -webkit-transition: .1s;
-    transition: .1s;
-}
 
 .hide-title {
     font-size: 0.1rem;
     visibility: hidden;
     -webkit-transition: .3s;
     transition: .3s;
+
+}
+
+.hide-menu {
+    font-size: 0.1rem;
+    visibility: hidden;
+    /* -webkit-transition: .1s;
+    transition: .1s; */
 
 }

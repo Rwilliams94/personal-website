@@ -1,7 +1,9 @@
 .about-main {
-    height: 90vh;
+    height: 93vh;
+    width: 100vw;
     font-family: Roboto;
-    color: whitesmoke;
+    color: black;
+    background: rgb(240, 237, 237);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +11,7 @@
 
 .about-body {
     width: 70vw;
+    max-width: 600px;
     height: 70vh;
     
 }
@@ -18,12 +21,9 @@
     line-height: 25px;
 }
 
-.about-title {
-    color: rgb(77, 102, 128) ;
-}
+
 
 .about-technologies {
-    color: rgb(77, 102, 128) ;
     font-size: 1.2rem;
     font-weight: 700;
 }

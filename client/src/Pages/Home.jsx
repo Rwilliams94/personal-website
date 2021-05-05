@@ -1,21 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { NavLink } from "react-router-dom";
+import { Link } from 'react-scroll'
 import '../Styles/Home.css'
 
 const Home = (props) => {
     return (
-        <div className="home-main">
-            <div className='home-title-main'>
-                <h1 className='home-title'>Hello, I'm <span className='name'>Rowan Williams.</span></h1>
-                <h1 className='home-title'>I'm a full-stack web developer</h1>
-                <div className='home-projectlink'>
-                    <NavLink exact to="/projects" className="navbar-item">
-                        <h3 onClick={props.funcShow}>See My Projects</h3>
-                    </NavLink>
-                </div>
-            </div>
+      <div className="home-main" id="Home">
+        <div className="home-title-main">
+          <h1 className="home-title thin">
+            Hello, I'm <span className="color-pop">Rowan Williams.</span>
+          </h1>
+          <h1 className="home-title thin">I'm a full-stack web developer</h1>
+          <div className="home-projectlink">
+            <Link
+              activeClass="active"
+              to="About"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={1000}
+              className="navbar-item"
+            >
+              <h2 className="thin navbar-scroll" onClick={props.funcShow}>
+                My Portfolio
+              </h2>
+            </Link>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 
 export default Home

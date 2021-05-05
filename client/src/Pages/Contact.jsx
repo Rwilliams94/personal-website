@@ -8,7 +8,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return (
-        <div className='contact-main'>
+        <div className='contact-main' id="Contact">
             <div className="contact-title-box">
                 <h1 className="contact-title">
                     I would love the opportunity to work with you.        
