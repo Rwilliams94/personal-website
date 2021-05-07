@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <div className="projects-main" id="Projects">
-      <h1 className="project-title thin">Projects</h1>
+      <h1 className="project-title thin">Portfolio</h1>
       <div className={`projects-popup-container ${popUp ? "" : "hide"}`}>
         <div className={`projects-popup ${popUpCanned ? "" : "hide"}`}>
           <img
@@ -55,6 +55,8 @@ const Projects = () => {
             <div className="popup-close-box">
               <a
                 className="popup-link"
+                target="_blank"
+                rel="noreferrer"
                 href="https://canned-project.herokuapp.com/"
               >
                 Go to the app
@@ -89,6 +91,8 @@ const Projects = () => {
             <div className="popup-close-box">
               <a
                 className="popup-link"
+                target="_blank"
+                rel="noreferrer"
                 href="https://rwilliams94.github.io/Space-Man-Game-Project/"
               >
                 Go to the game
@@ -124,6 +128,8 @@ const Projects = () => {
             <div className="popup-close-box">
               <a
                 className="popup-link"
+                target="_blank"
+                rel="noreferrer"
                 href="https://super-recipes.herokuapp.com/"
               >
                 Go to the site
@@ -155,6 +161,8 @@ const Projects = () => {
                 <div className="popup-close-box">
                 <a
                     className="popup-link"
+                    target="_blank"
+                    rel="noreferrer"
                     href=" https://pokeapp-test.herokuapp.com/"
                 >
                     Go to the site
@@ -172,7 +180,7 @@ const Projects = () => {
         
       </div>
       <div className="projects-links">
-        <Grid container spacing={4} justify="center">
+        <Grid container spacing={1} justify="center">
           <Grid item>
             <div className="projects-link-box">
               <img

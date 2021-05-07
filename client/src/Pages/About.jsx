@@ -39,6 +39,7 @@ const About = () => {
           Axios | Mongoose | Git |
         </p>
       </div>
+    
     </div>
   );
 };
