@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <div className="projects-main" id="Projects">
-      <h1 className="project-title thin">Portfolio</h1>
+      <h1 className="project-title">Portfolio.</h1>
       <div className={`projects-popup-container ${popUp ? "" : "hide"}`}>
         <div className={`projects-popup ${popUpCanned ? "" : "hide"}`}>
           <img

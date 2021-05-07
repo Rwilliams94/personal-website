@@ -1,5 +1,5 @@
 .contact-main {
-    height: 30vh;
+    height: 53vh;
     width: 100%;
     font-family: Roboto;
     display: flex;
@@ -10,26 +10,17 @@
 
 .contact-links {
     width: 85vw;
-    height: 50%;
+    height: 40%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.contact-title-box {
-    width: 75vw;
-    height: 20vh;
-    margin-top: 10vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
 
 .contact-title {
-    font-size: 1.9rem;
-    margin-bottom: 4vh;
+    font-size: 3.0rem;
+    margin-bottom: 5vh;
 
 }
 
@@ -70,4 +61,21 @@
     color: rgb(32, 118, 211);
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+
+@media only screen and (max-width: 875px) {
+    .contact-link-box {
+        width: 50px;
+        height: 50px;
+        border: none;
+    }
+
+    .contact-title {
+        font-size: 1.85rem;
+    }
+
+    .contact-main {
+        height: 33vh;
+    }
 }

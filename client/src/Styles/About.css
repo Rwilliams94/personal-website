@@ -23,7 +23,7 @@
 }
 
 .about-body {
-    width: 70vw;
+    width: 85vw;
     max-width: 600px;
     height: 70vh;
     
@@ -34,9 +34,42 @@
     line-height: 25px;
 }
 
-
-
 .about-technologies {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 875px) {
+    .about-main {
+        flex-direction: column;
+    }
+
+    .about-pic-box {
+        height: 25vh;
+        margin: 5vh 0 2vh 0;
+
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-pic {
+        height: 25vh;
+    }
+
+    .about-body {
+        max-width: 750px;
+    }
+
+    .about-body > h1 {
+        font-size: 1.4rem;
+    }
+
+    .about-body > p {
+        font-size: .85rem;
+        line-height: 18px;
+    }
+
+    .about-technologies {
+        font-size: 1rem;
+    }
 }

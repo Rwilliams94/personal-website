@@ -10,7 +10,7 @@
 
 .home-title-main {
     width: 75vw;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -18,8 +18,19 @@
 }
 
 .home-title {
-    font-size: 3.5vw;
+    font-size: 3.4rem;
     margin: 0;
+
+}
+
+@media only screen and (max-width: 875px) {
+    .home-title {
+        font-size: 3.0rem;
+    }
+    
+    .home-title-main {
+        height: 75vh;
+    }
 
 }
 
